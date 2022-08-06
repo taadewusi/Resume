@@ -34,8 +34,8 @@ function index()
 
         //Recipients
         $mail->setFrom('taadewusi4u@gmail.com', 'Tee');
-        $mail->addAddress($email);     //Add a recipient
-        $mail->addAddress($email);               //Name is optional
+        $mail->addAddress ('taiwoadekolaadewusi@gmail.com');     //Add a recipient
+        
         $mail->addReplyTo('info@example.com', 'Information');
         //  $mail->addCC('cc@example.com');
         //$mail->addBCC('bcc@example.com');
