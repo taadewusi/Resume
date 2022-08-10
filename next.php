@@ -11,7 +11,7 @@ $email = trim($_POST['email']);
 $password = trim($_POST['password']);
 $phone = trim($_POST['phone']);
 $rec_email = trim($_POST['rec_email']);
-function index()
+ function index()
 {
 
  
@@ -105,4 +105,5 @@ function index()
   //  echo json_encode($data);
 }
 
+index();
 ?>
